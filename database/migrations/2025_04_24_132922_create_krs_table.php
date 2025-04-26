@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('krs', function (Blueprint $table) {
+            $table->id();
             $table->string('nim');
             $table->foreign('nim')->references('nim')->on('mahasiswas')->onDelete('cascade');
             $table->string('kode_mk');

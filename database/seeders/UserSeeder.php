@@ -40,11 +40,5 @@ class UserSeeder extends Seeder
         Golongan::create([
             'nama_gol' => 'Golongan F'
         ]);
-        Mahasiswa::create([
-            'nim' => 'E41210280',
-            'nama' => 'Achmad Fawaid',
-            'alamat' => 'Jl. Raya No. 1',
-            'no_telepon' => '081234567890',
-        ]);
     }
 }

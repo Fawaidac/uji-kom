@@ -37,7 +37,6 @@ class KrsResource extends Resource
                 Select::make('kode_mk')
                     ->label('Mata Kuliah')
                     ->required()
-                    ->multiple()
                     ->options(MataKuliah::all()->pluck('nama_mk', 'kode_mk'))
                     ->placeholder('Pilih Mata Kuliah'),
             ]);
